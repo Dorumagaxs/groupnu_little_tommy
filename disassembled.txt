@@ -1,0 +1,213 @@
+Dump of assembler code for function main:
+   [34m0x0804865c[m <+0>:	lea    ecx,[esp+0x4]
+   [34m0x08048660[m <+4>:	and    esp,0xfffffff0
+   [34m0x08048663[m <+7>:	push   DWORD PTR [ecx-0x4]
+   [34m0x08048666[m <+10>:	push   ebp
+   [34m0x08048667[m <+11>:	mov    ebp,esp
+   [34m0x08048669[m <+13>:	push   ebx
+   [34m0x0804866a[m <+14>:	push   ecx
+   [34m0x0804866b[m <+15>:	sub    esp,0x110
+   [34m0x08048671[m <+21>:	mov    eax,gs:0x14
+   [34m0x08048677[m <+27>:	mov    DWORD PTR [ebp-0xc],eax
+   [34m0x0804867a[m <+30>:	xor    eax,eax
+   [34m0x0804867c[m <+32>:	sub    esp,0xc
+   [34m0x0804867f[m <+35>:	push   0x80489e0
+   [34m0x08048684[m <+40>:	call   0x8048490 <puts@plt>
+   [34m0x08048689[m <+45>:	add    esp,0x10
+   [34m0x0804868c[m <+48>:	mov    BYTE PTR [ebp-0x113],0x0
+   [34m0x08048693[m <+55>:	sub    esp,0xc
+   [34m0x08048696[m <+58>:	push   0x8048a4c
+   [34m0x0804869b[m <+63>:	call   0x8048430 <printf@plt>
+   [34m0x080486a0[m <+68>:	add    esp,0x10
+   [34m0x080486a3[m <+71>:	call   0x8048460 <getchar@plt>
+   [34m0x080486a8[m <+76>:	mov    BYTE PTR [ebp-0x112],al
+   [34m0x080486ae[m <+82>:	nop
+   [34m0x080486af[m <+83>:	call   0x8048460 <getchar@plt>
+   [34m0x080486b4[m <+88>:	mov    BYTE PTR [ebp-0x111],al
+   [34m0x080486ba[m <+94>:	cmp    BYTE PTR [ebp-0x111],0xa
+   [34m0x080486c1[m <+101>:	je     0x80486cc <main+112>
+   [34m0x080486c3[m <+103>:	cmp    BYTE PTR [ebp-0x111],0xff
+   [34m0x080486ca[m <+110>:	jne    0x80486af <main+83>
+   [34m0x080486cc[m <+112>:	movsx  eax,BYTE PTR [ebp-0x112]
+   [34m0x080486d3[m <+119>:	sub    eax,0x31
+   [34m0x080486d6[m <+122>:	cmp    eax,0x4
+   [34m0x080486d9[m <+125>:	ja     0x8048693 <main+55>
+   [34m0x080486db[m <+127>:	mov    eax,DWORD PTR [eax*4+0x8048c0c]
+   [34m0x080486e2[m <+134>:	jmp    eax
+   [34m0x080486e4[m <+136>:	sub    esp,0xc
+   [34m0x080486e7[m <+139>:	push   0x48
+   [34m0x080486e9[m <+141>:	call   0x8048480 <malloc@plt>
+   [34m0x080486ee[m <+146>:	add    esp,0x10
+   [34m0x080486f1[m <+149>:	mov    ds:0x804a048,eax
+   [34m0x080486f6[m <+154>:	sub    esp,0xc
+   [34m0x080486f9[m <+157>:	push   0x8048ac2
+   [34m0x080486fe[m <+162>:	call   0x8048430 <printf@plt>
+   [34m0x08048703[m <+167>:	add    esp,0x10
+   [34m0x08048706[m <+170>:	mov    eax,ds:0x804a040
+   [34m0x0804870b[m <+175>:	sub    esp,0x4
+   [34m0x0804870e[m <+178>:	push   eax
+   [34m0x0804870f[m <+179>:	push   0x100
+   [34m0x08048714[m <+184>:	lea    eax,[ebp-0x10c]
+   [34m0x0804871a[m <+190>:	push   eax
+   [34m0x0804871b[m <+191>:	call   0x8048470 <fgets@plt>
+   [34m0x08048720[m <+196>:	add    esp,0x10
+   [34m0x08048723[m <+199>:	mov    eax,ds:0x804a048
+   [34m0x08048728[m <+204>:	mov    edx,eax
+   [34m0x0804872a[m <+206>:	sub    esp,0x4
+   [34m0x0804872d[m <+209>:	push   0x1e
+   [34m0x0804872f[m <+211>:	lea    eax,[ebp-0x10c]
+   [34m0x08048735[m <+217>:	push   eax
+   [34m0x08048736[m <+218>:	push   edx
+   [34m0x08048737[m <+219>:	call   0x80484d0 <strncpy@plt>
+   [34m0x0804873c[m <+224>:	add    esp,0x10
+   [34m0x0804873f[m <+227>:	mov    eax,ds:0x804a048
+   [34m0x08048744[m <+232>:	sub    esp,0xc
+   [34m0x08048747[m <+235>:	push   eax
+   [34m0x08048748[m <+236>:	call   0x80484b0 <strlen@plt>
+   [34m0x0804874d[m <+241>:	add    esp,0x10
+   [34m0x08048750[m <+244>:	mov    DWORD PTR [ebp-0x110],eax
+   [34m0x08048756[m <+250>:	cmp    DWORD PTR [ebp-0x110],0x1e
+   [34m0x0804875d[m <+257>:	jg     0x8048773 <main+279>
+   [34m0x0804875f[m <+259>:	mov    eax,ds:0x804a048
+   [34m0x08048764[m <+264>:	mov    edx,DWORD PTR [ebp-0x110]
+   [34m0x0804876a[m <+270>:	sub    edx,0x1
+   [34m0x0804876d[m <+273>:	mov    BYTE PTR [eax+edx*1],0x0
+   [34m0x08048771[m <+277>:	jmp    0x804877c <main+288>
+   [34m0x08048773[m <+279>:	mov    eax,ds:0x804a048
+   [34m0x08048778[m <+284>:	mov    BYTE PTR [eax+0x1f],0x0
+   [34m0x0804877c[m <+288>:	sub    esp,0xc
+   [34m0x0804877f[m <+291>:	push   0x8048ad0
+   [34m0x08048784[m <+296>:	call   0x8048430 <printf@plt>
+   [34m0x08048789[m <+301>:	add    esp,0x10
+   [34m0x0804878c[m <+304>:	mov    eax,ds:0x804a040
+   [34m0x08048791[m <+309>:	sub    esp,0x4
+   [34m0x08048794[m <+312>:	push   eax
+   [34m0x08048795[m <+313>:	push   0x100
+   [34m0x0804879a[m <+318>:	lea    eax,[ebp-0x10c]
+   [34m0x080487a0[m <+324>:	push   eax
+   [34m0x080487a1[m <+325>:	call   0x8048470 <fgets@plt>
+   [34m0x080487a6[m <+330>:	add    esp,0x10
+   [34m0x080487a9[m <+333>:	mov    eax,ds:0x804a048
+   [34m0x080487ae[m <+338>:	lea    edx,[eax+0x20]
+   [34m0x080487b1[m <+341>:	sub    esp,0x4
+   [34m0x080487b4[m <+344>:	push   0x1e
+   [34m0x080487b6[m <+346>:	lea    eax,[ebp-0x10c]
+   [34m0x080487bc[m <+352>:	push   eax
+   [34m0x080487bd[m <+353>:	push   edx
+   [34m0x080487be[m <+354>:	call   0x80484d0 <strncpy@plt>
+   [34m0x080487c3[m <+359>:	add    esp,0x10
+   [34m0x080487c6[m <+362>:	mov    eax,ds:0x804a048
+   [34m0x080487cb[m <+367>:	add    eax,0x20
+   [34m0x080487ce[m <+370>:	sub    esp,0xc
+   [34m0x080487d1[m <+373>:	push   eax
+   [34m0x080487d2[m <+374>:	call   0x80484b0 <strlen@plt>
+   [34m0x080487d7[m <+379>:	add    esp,0x10
+   [34m0x080487da[m <+382>:	mov    DWORD PTR [ebp-0x110],eax
+   [34m0x080487e0[m <+388>:	cmp    DWORD PTR [ebp-0x110],0x1e
+   [34m0x080487e7[m <+395>:	jg     0x80487fe <main+418>
+   [34m0x080487e9[m <+397>:	mov    eax,ds:0x804a048
+   [34m0x080487ee[m <+402>:	mov    edx,DWORD PTR [ebp-0x110]
+   [34m0x080487f4[m <+408>:	sub    edx,0x1
+   [34m0x080487f7[m <+411>:	mov    BYTE PTR [eax+edx*1+0x20],0x0
+   [34m0x080487fc[m <+416>:	jmp    0x8048807 <main+427>
+   [34m0x080487fe[m <+418>:	mov    eax,ds:0x804a048
+   [34m0x08048803[m <+423>:	mov    BYTE PTR [eax+0x3f],0x0
+   [34m0x08048807[m <+427>:	mov    eax,ds:0x804a048
+   [34m0x0804880c[m <+432>:	sub    esp,0x8
+   [34m0x0804880f[m <+435>:	push   eax
+   [34m0x08048810[m <+436>:	push   0x8048adc
+   [34m0x08048815[m <+441>:	call   0x8048430 <printf@plt>
+   [34m0x0804881a[m <+446>:	add    esp,0x10
+   [34m0x0804881d[m <+449>:	jmp    0x8048950 <main+756>
+   [34m0x08048822[m <+454>:	mov    eax,ds:0x804a048
+   [34m0x08048827[m <+459>:	test   eax,eax
+   [34m0x08048829[m <+461>:	jne    0x8048840 <main+484>
+   [34m0x0804882b[m <+463>:	sub    esp,0xc
+   [34m0x0804882e[m <+466>:	push   0x8048b01
+   [34m0x08048833[m <+471>:	call   0x8048490 <puts@plt>
+   [34m0x08048838[m <+476>:	add    esp,0x10
+   [34m0x0804883b[m <+479>:	jmp    0x8048950 <main+756>
+   [34m0x08048840[m <+484>:	mov    eax,ds:0x804a048
+   [34m0x08048845[m <+489>:	mov    edx,DWORD PTR [eax+0x40]
+   [34m0x08048848[m <+492>:	mov    eax,ds:0x804a048
+   [34m0x0804884d[m <+497>:	lea    ecx,[eax+0x20]
+   [34m0x08048850[m <+500>:	mov    eax,ds:0x804a048
+   [34m0x08048855[m <+505>:	mov    ebx,eax
+   [34m0x08048857[m <+507>:	mov    eax,ds:0x804a048
+   [34m0x0804885c[m <+512>:	sub    esp,0xc
+   [34m0x0804885f[m <+515>:	push   edx
+   [34m0x08048860[m <+516>:	push   ecx
+   [34m0x08048861[m <+517>:	push   ebx
+   [34m0x08048862[m <+518>:	push   eax
+   [34m0x08048863[m <+519>:	push   0x8048b1c
+   [34m0x08048868[m <+524>:	call   0x8048430 <printf@plt>
+   [34m0x0804886d[m <+529>:	add    esp,0x20
+   [34m0x08048870[m <+532>:	jmp    0x8048950 <main+756>
+   [34m0x08048875[m <+537>:	mov    eax,ds:0x804a048
+   [34m0x0804887a[m <+542>:	test   eax,eax
+   [34m0x0804887c[m <+544>:	jne    0x8048893 <main+567>
+   [34m0x0804887e[m <+546>:	sub    esp,0xc
+   [34m0x08048881[m <+549>:	push   0x8048b01
+   [34m0x08048886[m <+554>:	call   0x8048490 <puts@plt>
+   [34m0x0804888b[m <+559>:	add    esp,0x10
+   [34m0x0804888e[m <+562>:	jmp    0x8048950 <main+756>
+   [34m0x08048893[m <+567>:	mov    eax,ds:0x804a048
+   [34m0x08048898[m <+572>:	sub    esp,0xc
+   [34m0x0804889b[m <+575>:	push   eax
+   [34m0x0804889c[m <+576>:	call   0x8048440 <free@plt>
+   [34m0x080488a1[m <+581>:	add    esp,0x10
+   [34m0x080488a4[m <+584>:	sub    esp,0xc
+   [34m0x080488a7[m <+587>:	push   0x8048b81
+   [34m0x080488ac[m <+592>:	call   0x8048490 <puts@plt>
+   [34m0x080488b1[m <+597>:	add    esp,0x10
+   [34m0x080488b4[m <+600>:	jmp    0x8048950 <main+756>
+   [34m0x080488b9[m <+605>:	sub    esp,0xc
+   [34m0x080488bc[m <+608>:	push   0x8048b9f
+   [34m0x080488c1[m <+613>:	call   0x8048490 <puts@plt>
+
+# MEMO
+
+   [34m0x080488c6[m <+618>:	add    esp,0x10
+   [34m0x080488c9[m <+621>:	mov    eax,ds:0x804a040
+   [34m0x080488ce[m <+626>:	sub    esp,0x4
+   [34m0x080488d1[m <+629>:	push   eax
+   [34m0x080488d2[m <+630>:	push   0x100
+   [34m0x080488d7[m <+635>:	lea    eax,[ebp-0x10c]
+   [34m0x080488dd[m <+641>:	push   eax
+   [34m0x080488de[m <+642>:	call   0x8048470 <fgets@plt>
+   [34m0x080488e3[m <+647>:	add    esp,0x10
+   [34m0x080488e6[m <+650>:	sub    esp,0xc
+   [34m0x080488e9[m <+653>:	lea    eax,[ebp-0x10c]
+   [34m0x080488ef[m <+659>:	push   eax
+   [34m0x080488f0[m <+660>:	call   0x8048450 <strdup@plt>
+   [34m0x080488f5[m <+665>:	add    esp,0x10
+   [34m0x080488f8[m <+668>:	mov    ds:0x804a04c,eax
+   [34m0x080488fd[m <+673>:	mov    eax,ds:0x804a04c
+   [34m0x08048902[m <+678>:	sub    esp,0x8
+   [34m0x08048905[m <+681>:	push   eax
+   [34m0x08048906[m <+682>:	push   0x8048bb4
+   [34m0x0804890b[m <+687>:	call   0x8048430 <printf@plt>
+   [34m0x08048910[m <+692>:	add    esp,0x10
+   [34m0x08048913[m <+695>:	jmp    0x8048950 <main+756>
+
+ # FLAG
+
+   [34m0x08048915[m <+697>:	mov    eax,ds:0x804a048
+   [34m0x0804891a[m <+702>:	test   eax,eax
+   [34m0x0804891c[m <+704>:	je     0x804893f <main+739>
+   [34m0x0804891e[m <+706>:	mov    eax,ds:0x804a048
+   [34m0x08048923[m <+711>:	mov    eax,DWORD PTR [eax+0x40]
+   [34m0x08048926[m <+714>:	cmp    eax,0x6b637566
+   [34m0x0804892b[m <+719>:	jne    0x804893f <main+739>
+   [34m0x0804892d[m <+721>:	sub    esp,0xc
+   [34m0x08048930[m <+724>:	push   0x8048bf4
+   [34m0x08048935[m <+729>:	call   0x80484a0 <system@plt>
+   [34m0x0804893a[m <+734>:	add    esp,0x10
+   [34m0x0804893d[m <+737>:	jmp    0x804894f <main+755>
+   [34m0x0804893f[m <+739>:	sub    esp,0xc
+   [34m0x08048942[m <+742>:	push   0x8048c02
+   [34m0x08048947[m <+747>:	call   0x8048490 <puts@plt>
+   [34m0x0804894c[m <+752>:	add    esp,0x10
+   [34m0x0804894f[m <+755>:	nop
+   [34m0x08048950[m <+756>:	jmp    0x8048693 <main+55>
+End of assembler dump.
